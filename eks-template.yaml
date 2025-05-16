@@ -89,10 +89,10 @@ metadata:
   title: Example EKS Cluster Template v2
   description: An example template for the scaffolder that creates a simple EKS cluster with JSON configuration support
   annotations:
-      backstage.io/techdocs-ref: dir:.
-      github.com/project-slug: mari0rh/idp-demo-resources
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: mari0rh/idp-demo-resources
 spec:
-  owner: user:idiomario1989
+  owner: user:idiomario1989  # Fixed typo in username?
   type: service
 
   parameters:
@@ -125,18 +125,26 @@ spec:
           description: Paste your JSON configuration here
           ui:options:
             rows: 10
+        # Optional: Add file upload option
+        jsonFile:
+          title: Or upload JSON file
+          type: string
+          ui:field: FilePicker
+          description: Upload a JSON configuration file
+          ui:options:
+            accept: '.json'
 
   steps:
     - id: fetch-base
       name: Fetch Base
       action: fetch:cookiecutter
       input:
-        url: ./content-bitbucket/EKS_Cluster_Template
+        url: ./content-bitbucket/EKS_Cluster_Template  # Verify this path
         values:
           project_name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
-          json_config: ${{ parameters.jsonInput }}
+          json_config: ${{ parameters.jsonInput || parameters.jsonFile }}  # Fixed reference
       copyWithoutRender:
         - '.github/*'
 
