@@ -136,7 +136,7 @@ spec:
           project_name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
-          json_config: ${{ parameters.jsonFile }}
+          json_config: ${{ parameters.jsonInput }}
       copyWithoutRender:
         - '.github/*'
 
