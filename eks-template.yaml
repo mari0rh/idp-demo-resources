@@ -115,13 +115,6 @@ spec:
               - github.com
     - title: JSON Configuration
       properties:
-        jsonInput:
-          title: JSON Configuration
-          type: string
-          ui:widget: textarea
-          description: Paste your JSON configuration here
-          ui:options:
-            rows: 10
         jsonFile:
           title: Or upload JSON file
           type: string
@@ -140,7 +133,7 @@ spec:
           project_name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
-          json_config: ${{ parameters.jsonInput || parameters.jsonFile }}
+          json_config: ${{ parameters.jsonFile }}
       copyWithoutRender:
         - '.github/*'
 
