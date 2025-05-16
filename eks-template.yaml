@@ -131,7 +131,7 @@ spec:
       name: Fetch Base
       action: fetch:cookiecutter
       input:
-        url: ./examples/template/content-bitbucket/EKS_Cluster_Template # Verify this path
+        url: ./content-2 # Verify this path
         values:
           project_name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }}
