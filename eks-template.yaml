@@ -118,13 +118,13 @@ spec:
               - github.com
     - title: JSON Configuration
       properties:
-        jsonFile:
-          title: Or upload JSON file
+        jsonInput:
+          title: JSON Configuration
           type: string
-          ui:field: FilePicker
-          description: Upload a JSON configuration file
+          ui:widget: textarea
+          description: Paste your JSON configuration here
           ui:options:
-            accept: '.json'
+            rows: 10
 
   steps:
     - id: fetch-base
