@@ -88,6 +88,9 @@ metadata:
   name: eks-cluster-template-bitbucket
   title: Example EKS Cluster Template
   description: An example template for the scaffolder that creates a simple EKS cluster with JSON configuration support
+  annotations:
+      backstage.io/techdocs-ref: dir:.
+      github.com/project-slug: mari0rh/idp-demo-resources
 spec:
   owner: user:idiomario1989
   type: service
