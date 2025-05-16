@@ -89,7 +89,7 @@ metadata:
   title: Example EKS Cluster Template
   description: An example template for the scaffolder that creates a simple EKS cluster with JSON configuration support
 spec:
-  owner: user:guest
+  owner: user:idiomario1989
   type: service
 
   parameters:
