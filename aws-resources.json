@@ -1,36 +1,12 @@
 {
-    "app_name": "dashcored-bots",
-    "application_family": "dashcored",
+  "k12-development": {
+    "app_name": "dev-app",
     "region": "us-east-1",
-    "jenkins_jobs_path" : "Dashcord/Dashcored-bots",
-    "repository_name": "dashcored-bots-infrastructure",
-    
-    "dev_environment_name": "dev",
-    "qa_environment_name": "qa",
-    "staging_environment_name": "staging",
-    "perf_environment_name": "perf",
-    "prod_environment_name": "prod",
-    "namespace_name": "dashcored",
-    "abbr_app_name": "dc",
-
-    "dev_subnet1": "subnet-0fbb8d1bdaab10e35",
-    "dev_subnet2": "subnet-0880951b79db24967",
-    "dev_subnet3": "subnet-0a999d1a4b76e6f14",
-    "dev_account_id": "156245163037",
-    "qa_subnet1": "subnet-0a0f047abd7de3228",
-    "qa_subnet2": "subnet-0b4614fbcc1b5366f",
-    "qa_subnet3": "subnet-0f1d2f444bb566bf0",
-    "qa_account_id": "786831149265",
-    "staging_subnet1": "subnet-03c1ad6a7d6623aad",
-    "staging_subnet2": "subnet-0e854010cef455022",
-    "staging_subnet3": "subnet-0bdd6060bccdd6d40",
-    "staging_account_id": "009206946176",
-    "perf_subnet1": "subnet-00082f58693ede7a8",
-    "perf_subnet2": "subnet-0a9b5fe7acfc7feb7",
-    "perf_subnet3": "subnet-0bbb87a56bb77aa9d",
-    "perf_account_id": "845624805618",
-    "prod_subnet1": "subnet-0d6d07bad598673cf",
-    "prod_subnet2": "subnet-04833ec94903b1db4",
-    "prod_subnet3": "subnet-03753f7c216c1099a",
-    "prod_account_id": "287422644271"
+    "account_id": "123456789012"
+  },
+  "k12-production": {
+    "app_name": "prod-app", 
+    "region": "us-west-2",
+    "account_id": "987654321098"
+  }
 }
