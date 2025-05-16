@@ -85,7 +85,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: eks-cluster-template-bitbucket
+  name: eks-cluster-template-bitbucket-v2
   title: Example EKS Cluster Template v2
   description: An example template for the scaffolder that creates a simple EKS cluster with JSON configuration support
   annotations:
